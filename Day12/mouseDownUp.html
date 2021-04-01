@@ -1,0 +1,57 @@
+<html>
+    <head> 
+<meta charset="UTF-8">
+<meta name ="viewport" content = "width=device-width, initial-scale = 1.0">
+<title>Document</title>
+
+<style>
+    @import url("https:// fonts.googleapis.com/css?family=Inconsolata:400,700");
+    body{
+        font-family: 'Inconsolata', sans-serif;
+        background: #2a364f;
+        display: grid;
+        place-items: center;
+    }
+    button{
+        display: inline-block;
+        background: #f8b627;
+        color: #F4F4F4;
+        font-size: 16px;
+        font-weight: normal;
+        width: 132px;
+        text-align: center;
+        border-radius: 3px;
+        transition: 400ms;
+        text-decoration: none;
+        padding: 10px 22px;
+        z-index: 100000;
+        outline: none;
+        border: none;
+    }
+    h1{
+        color: aquamarine;
+    }
+    p{
+        text-align: center;
+        color: rgba(255, 255,255, 1);
+    }
+    </style>
+    </head>
+    <body>
+        <p id="myP" onmousedown="mouseDown()" onmouseup = "mouseUp()">
+            click the text! The mouseDown() function is triggred when the mouse button is pressed down over this paragraph, and sets the color of the text to red.
+            The mouseUp() function is triggered when the mouse button is released, and sets the color of the text to red.
+        </p>
+        <script>
+            
+            function mouseDown(){
+                document.getElementById("myP").style.color = "#F8B627";
+
+            }
+
+            function mouseUp(){
+                document.getElementById("myP").style.color = 'red';
+            }
+        </script>
+    </body>
+    </html>
