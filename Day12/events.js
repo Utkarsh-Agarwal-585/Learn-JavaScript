@@ -36,6 +36,16 @@
 // The MouseEvent Object
 // Events that occur when the mouse interacts with the HTML 
 // document belongs to the MouseEvent Object.
+//mouseEnterLeave event:
+// const mEnter = document.getElementById('box');
+// mEnter.addEventListener('mouseenter', () => {
+//    mEnter.style.backgroundColor = 'red';
+//    console.log('Mouse Enter');
+//});
+// mEnter.addEventListener('mouseleave', () => {
+//    console.log('Mouse leave');
+//   mEnter.style.backgroundColor = 'pink'; 
+//});
 
 
 
@@ -43,11 +53,29 @@
 // Events that occur when user presses a key on the keyboard, 
 // belongs to the KeyboardEvent Object.
 // https://www.w3schools.com/jsref/obj_keyboardevent.asp
-
+// onkeypress, onkeydown(when you press the key), onkeyup(when you leave the pressing key) events.
+//eg. <input type = "text" onkeypress = "keyPress()">
+// <p id = "keys"></p>
+// <script>
+// const keyPress=() => {
+//  document.getElementById('keys').innerHTML = `you press ${event.key} and it's code is ${event.code}`;
+//}
+//</script>
 
 // Section 5️⃣ InputEvents in JavaScript 
 // The onchange event occurs when the value of an element has been changed.
 
 // For radiobuttons and checkboxes, the onchange event occurs when the 
 // checked state has been changed.
+//eg. we have a input box and a list of items so, whatever the user write the name and select the category, it print the names and list item in 
+// the console.
+// <input type = "text" onchange = selectElement()>
+// <select (create some list items)
+//<script>
+// const selectElement = () => {
+//const inputChange = document.getElementById('ice').nodeValue; // text field or inputbox
+//    const iceCreams = document.getElementById('icecreams').nodeValue;  //the list item
 
+//    console.log(`${inputChange} and ${iceCreams}`);
+//}
+// </script>
